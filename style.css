@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+#header {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#project {
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#title,
+#count,
+#category,
+#create,
+#search {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+}
+
+#price_row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#price_row input,
+#total {
+    width: 24%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    background-color: #e0f7fa;
+    border-radius: 5px;
+}
+
+#total {
+    background-color: #c8e6c9;
+    font-weight: bold;
+}
+
+#total::before {
+    content: 'Total: ';
+}
+
+#create,
+#Update,
+#SearchTitle,
+#SearchCategory,
+#Delete_All {
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#create,
+#Update {
+    background-color: #1976d2;
+    margin-top: 10px;
+}
+
+#SearchTitle,
+#SearchCategory {
+    background-color: #0288d1;
+    width: 48%;
+    margin: 10px 1%;
+}
+
+#typeSearche {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Delete_All {
+    background-color: #d32f2f;
+    margin-top: 20px;
+}
+
+#Delete_All::after {
+    content: ' (5)';
+    color: #fff;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #0288d1;
+    transition: 0.3s;
+}
+
+#project button:hover,
+input:hover {
+    background-color: #b2ebf2;
+}
+
+#table table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+#table table tr th {
+    text-transform: uppercase;
+    background-color: #1976d2;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#table table tbody tr {
+    height: 35px;
+    text-align: center;
+}
+
+#update,
+#delete {
+    cursor: pointer;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 4px 10px;
+    transition: background-color 0.3s ease;
+}
+
+#update:hover,
+#delete:hover {
+    background-color: #1565c0;
+}
